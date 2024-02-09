@@ -17,9 +17,9 @@ puts "----------"
 # 4. Do another fetch but this time load stores that carry women's apparel and are generating less than $1M in annual revenue.
 
 # Your code goes here ...
-Store.create({:name => "Surrey", :annual_revenue => 224000, :mens_apparel => false, :womens_apparel => false})
-Store.create({:name => "Whistler", :annual_revenue => 1900000, :mens_apparel => true, :womens_apparel => false})
-Store.create({:name => "Yaletown", :annual_revenue => 430000, :mens_apparel => true, :womens_apparel => true})
+@store4 = Store.create({:name => "Surrey", :annual_revenue => 224000, :mens_apparel => false, :womens_apparel => false})
+@store5 = Store.create({:name => "Whistler", :annual_revenue => 1900000, :mens_apparel => true, :womens_apparel => false})
+@store6 = Store.create({:name => "Yaletown", :annual_revenue => 430000, :mens_apparel => true, :womens_apparel => true})
 
 puts "Men's Apparel Stores:"
 @mens_stores = Store.where("mens_apparel = true")
